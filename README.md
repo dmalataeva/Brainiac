@@ -1,4 +1,4 @@
-# brainiac
+# Brainiac
 ### Brainiac (formerly BC Brainiac) Android rewrite
 
 
