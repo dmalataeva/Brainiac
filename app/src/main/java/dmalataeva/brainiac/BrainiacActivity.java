@@ -24,22 +24,17 @@ public class BrainiacActivity extends AppCompatActivity {
         Context myContext = getApplicationContext();
         setContentView(R.layout.activity_brainiac);
 
-        //addLogo(myContext);
         ImageButton play = addButtonPlay();
         ImageButton highscores = addButtonHighscores();
         ImageButton exit = addButtonExit();
+
+        ImageView logo = (ImageView)findViewById(R.id.logo);
+        Animation logoAnimation = AnimationUtils.loadAnimation(this, R.anim.animation_logo);
+        logo.startAnimation(logoAnimation);
     }
 
     protected void OnStart() {
-        Context myContext = getApplicationContext();
-        ImageView logo = (ImageView)findViewById(R.id.logo);
-        Animation logoAnim = AnimationUtils.loadAnimation(this, R.anim.animation_logo);
-        logo.startAnimation(logoAnim);
     }
-
-    //public void addLogo(Context cont) {
-
-    //}
 
     public ImageButton addButtonPlay() {
         ImageButton button = (ImageButton)findViewById(R.id.play);
@@ -59,7 +54,6 @@ public class BrainiacActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 Toast.makeText(getApplicationContext(), "HIGHSCORES is clicked!", Toast.LENGTH_SHORT).show();
-                setContentView(R.layout.activity_choose_level);
             }
         });
         return button;
@@ -71,7 +65,6 @@ public class BrainiacActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 Toast.makeText(getApplicationContext(), "EXIT is clicked!", Toast.LENGTH_SHORT).show();
-                setContentView(R.layout.activity_choose_level);
             }
         });
         return button;
