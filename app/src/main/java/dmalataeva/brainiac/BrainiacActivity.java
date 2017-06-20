@@ -5,6 +5,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -42,7 +43,8 @@ public class BrainiacActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 Toast.makeText(getApplicationContext(), "PLAY is clicked!", Toast.LENGTH_SHORT).show();
-                setContentView(R.layout.activity_choose_level);
+                Intent chooseLevel = new Intent(getApplicationContext(), ChooseLevelActivity.class);
+                startActivity(chooseLevel);
             }
         });
         return button;

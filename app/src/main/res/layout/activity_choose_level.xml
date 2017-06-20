@@ -36,58 +36,57 @@
             app:srcCompat="@drawable/select_frame"
             android:id="@+id/select_frame" />
 
-        <TableLayout
+        <HorizontalScrollView
             android:orientation="vertical"
+            android:fillViewport="true"
             android:gravity="center_vertical|center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/select_frame"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignBottom="@+id/select_frame">
 
-            <TableRow
+            <LinearLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="-10dp">
+                android:layout_width="match_parent"
+                android:id="@+id/linear_layout_scroll">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxHeight="200dp"
                     android:maxWidth="200dp"
-                    android:layout_margin="50dp"
+                    android:layout_margin="40dp"
                     app:srcCompat="@drawable/level_english"
                     android:id="@+id/level_english" />
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxHeight="200dp"
                     android:maxWidth="200dp"
-                    android:layout_margin="50dp"
+                    android:layout_margin="40dp"
                     app:srcCompat="@drawable/level_math"
                     android:id="@+id/level_math" />
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxHeight="200dp"
                     android:maxWidth="200dp"
-                    android:layout_margin="50dp"
+                    android:layout_margin="40dp"
                     app:srcCompat="@drawable/level_chemistry"
                     android:id="@+id/level_chemistry" />
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxHeight="200dp"
                     android:maxWidth="200dp"
-                    android:layout_margin="50dp"
+                    android:layout_margin="40dp"
                     app:srcCompat="@drawable/level_compsci"
                     android:id="@+id/level_compsci" />
-            </TableRow>
+            </LinearLayout>
 
-        </TableLayout>
+        </HorizontalScrollView>
 
     </RelativeLayout>
 
@@ -97,6 +96,8 @@
         android:layout_height="wrap_content"
         android:scaleX="0.7"
         android:scaleY="0.7"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_margin="5dp"
         android:src="@drawable/selector_button_select"
         android:id="@+id/select" />
