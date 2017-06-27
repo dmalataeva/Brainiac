@@ -98,6 +98,7 @@
         android:scaleY="0.7"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
+        android:paddingTop="5dp"
         android:layout_margin="5dp"
         android:src="@drawable/selector_button_select"
         android:id="@+id/select" />

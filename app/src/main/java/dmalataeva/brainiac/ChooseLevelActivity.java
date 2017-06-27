@@ -18,6 +18,7 @@ public class ChooseLevelActivity extends AppCompatActivity{
         setContentView(R.layout.activity_choose_level);
 
         LevelScrollView levelScroll = new LevelScrollView(myContext);
+        levelScroll.includeLevels();
         ImageView iconEnglish = (ImageView)findViewById(R.id.level_english);
         ImageView iconMath = (ImageView)findViewById(R.id.level_math);
         ImageView iconChemistry = (ImageView) findViewById(R.id.level_chemistry);

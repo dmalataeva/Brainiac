@@ -32,6 +32,7 @@
             android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:paddingTop="5dp"
             android:src="@drawable/selector_button_play"
             android:id="@+id/play" />
 
@@ -43,6 +44,7 @@
             android:scaleY="0.7"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:paddingTop="5dp"
             android:src="@drawable/selector_button_highscores"
             android:id="@+id/highscores" />
 
@@ -54,6 +56,7 @@
             android:scaleY="0.7"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:paddingTop="5dp"
             android:src="@drawable/selector_button_exit"
             android:id="@+id/exit" />
 
